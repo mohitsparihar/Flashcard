@@ -1,0 +1,23 @@
+* {
+    list-style: none;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logo {
+        font-size: 40px;
+    }
+    .nav-ul {
+        margin: 0;
+        display: flex;
+        li {
+            padding: 0 1em;
+            list-style: none;
+            padding: 12px;
+        }
+    }
+}
