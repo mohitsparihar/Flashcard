@@ -1,7 +1,10 @@
+* {
+    text-decoration: none;
+}
 header {
     width: auto;
     margin: 0 3% 2% 3%;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
 }
 .container {
@@ -22,14 +25,17 @@ header {
 .operator {
     height: 60px;
     width: 100px;
-    border-radius: 10%;
+    border: 2px solid rgba(165, 181, 194, 0.4);
     font-size: 30px;
+    text-decoration: none;
 }
 #flip {
     position: absolute;
     height: 100px;
     width: 130px;
-    border-radius: 50%;
+    background-color: rgba(165, 181, 194, 0.4);
+    border: 2px solid white;
+    border-radius: 10%;
     font-size: 50px;
     bottom: 0;
 }

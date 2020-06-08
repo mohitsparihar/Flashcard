@@ -1,12 +1,12 @@
 <div class="flashcardPage">
-    <header><h1>{{flashcardData[1].subject}}</h1></header>
+    <header><h1 *ngIf='flashcardData'>{{flashcardData[counter].subject}}</h1></header>
     <div class="container" id="container">
         <button class="operator" id="prevBtn" (click)="displayPrev()">PREV</button>
         <div *ngIf='flashcardData && flashcardData.length'>
             <div id="card">
                 <div id="data" (onload)="displayItem()">
                     <div id="question">{{flashcardData[counter].question}}</div>
-                    <div id="answer">{{flashcardData[counter].answer}}</div>
+                    <div id="answer" *ngIf="showAnswer">{{flashcardData[counter].answer}}</div>
                 </div>
                 <button class="flash" id="flip" (click)="displayAnswer()">FLIP</button>
             </div>
